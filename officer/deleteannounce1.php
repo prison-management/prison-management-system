@@ -8,7 +8,7 @@
          
          
           <tr>
-            <td colspan="3" bgcolor='#999999' valign='center'>
+            <td colspan="3" bgcolor='#999999' valign='center'><br><br><br>
 
 <?php
 ob_start();
@@ -42,7 +42,7 @@ print "<script language=\"javascript\">
 
 <?php
 
-print "<table width='100%' bgcolor='GREEN' border='0' cellpadding='3' cellspacing='2' bgcolor='silver'>
+print "<table width='100%' bgcolor='black' border='0' cellpadding='3' cellspacing='2' bgcolor='silver'>
 <caption><b>DELETE ANNOUNCEMENT DETAILS </b></caption>
 <tr bgcolor='#CCCCCC'>
 <th>To.</th>
@@ -75,16 +75,14 @@ print"</table>";
 			</td>
           </tr>
           <tr>
-		  <td align="center" bgcolor='green'><a href="officerpanel.php" target="_parent">Panel Officer <b>|</b></a>
-			<a href="viewannounce1.php" target="_parent">View <b>|</b></a>
-			<a href="index.php" target="_parent">Log out</a></td>
+		  <td align="center" bgcolor='black'><a href="officerpanel.php" target="_parent">Panel Officer <b>|</b></a>
+			<a href="viewannounce1.php" target="_parent">View <b>|</b></a></td>
 		
           </tr>
           <tr>
-            <td colspan='3' align='center' bgcolor='red' height='1'>
-            	<?php
-           include("footer.php");
-                ?>
+            <td colspan='3' align='center' bgcolor='black' height='1'><br>
+            <h4 style="color: white">
+             &copy; Prison Mnanagement System</h4>
             </td>
           </tr>
 	</table>

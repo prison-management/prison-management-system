@@ -9,39 +9,30 @@
       margin:0px;
      }
    </style>
-  <title>PRISON MANAGEMNT SYSTEM</title>
+  <title>PRISON MANAGEMENT SYSTEM</title>
 </head>
 <body>
-    <table align='center' border='1' bgcolor='green' width='820' cellpadding='10' cellspacing='0' height='325'>
-          <tr>
-            <td colspan='3' height='2'><img src='banner.gif'></td>
-          </tr>
+<table align='center' border='0' bgcolor='white' width='1200' cellpadding='10' cellspacing='0' height='325'>
+	<h1 style="font-size: 60px;background: grey;color: black; padding: 70px;text-align: center">PRISON MANAGEMENT SYSTEM</h1>
       
   <tr>
-   <td colspan="8" bgcolor="FF0000" height="3" align="center">			
+   <td colspan="8" bgcolor="black" height="3" align="center" width=500>			
 	   <font size="5">  
-     <a href="../index.php">Log Out</a>|
-     <a href="officerpanel.php">Back to  Panel</a>
+     <a href="../index.php">Log Out |</a>
+     <a href="officerpanel.php">Officer Panel</a>
           </font> </td>
 </tr>
-<td align="center" bgcolor="#FFFFFF"><h1> Seacrh By Prisoner Name</h1>
+<td align="center" bgcolor="silver" width="1200"><h1> Seacrh By Prisoner Name</h1>
         <form action="search.php" method="get">
            <label>Prisoner Name:
          <input type="text" name="keyname" />
        </label>
           <input type="submit" value="Search" />
       </form>
-     <td height="191" bgcolor="#FFFFFF"></td>
-<td width="7%" bgcolor="#FFFFFF"></td>
-<td width="2%" bgcolor="#FFFFFF"></td>
-
-<tr>
-</tr>
-           <?php
-           include("footer.php");
-                ?>
-          <tr>
-</tr>
+      <tr>
+<td bgcolor="grey"  colspan="3" align="center">
+&copy; Prison Management System</td>
+</tr>          
 </table>
 </body>
 </html>

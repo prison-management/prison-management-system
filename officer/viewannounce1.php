@@ -4,7 +4,7 @@
    <link rel="stylesheet" media="screen" href="login.css" >
 </head>
 <body>
-	<table align='center' border='0' bgcolor='green' width='800' cellpadding='8' cellspacing='0' height='200'>
+	<table align='center' border='0' bgcolor='grey' width='800' cellpadding='8' cellspacing='0' height='200'>
           <tr>
             <td bgcolor='#999999' valign='center'>
 
@@ -20,7 +20,7 @@ $con = mysqli_connect("$host","$username","$password") or die("cannot connect");
 mysqli_select_db($con, "$db_name")or die("cannot connect");
 
 $sel= mysqli_query($con, "select * from $tbl_name");
-echo"<table align='center' bgcolor='GREEN' width='100%' border='0' cellpadding='3' cellspacing='2' bgcolor='silver'>
+echo"<table align='center' bgcolor='black' width='100%' border='0' cellpadding='3' cellspacing='2' bgcolor='silver'>
 <caption><h3>ANNOUNCE  DETAILS</h3></caption>
 <tr bgcolor='#CCCCCC'>
 <th width='3%'>To</th>
@@ -47,16 +47,15 @@ echo"</table>";
 			</td>
           </tr>
           <tr>
-			<td align="center" bgcolor='green'><a href="officerpanel.php" target="_parent">Panel Officer <b>|</b></a>
-			<a href="deleteannounce1.php" target="_parent">Delete <b>|</b></a>
-			<a href="index.php" target="_parent">Log out</a></td>
+			<td align="center" bgcolor='black'><a href="officerpanel.php" target="_parent">Panel Officer <b>|</b></a>
+			<a href="deleteannounce1.php" target="_parent">Delete </a></td>
 		
 		
           </tr>
           <tr>
-            <td align='center' bgcolor='GREY' height='1'><?php
-           include("footer.php");
-                ?>
+           
+            <td><h4 style="color: white">
+             &copy; Prison Mnanagement System</h4></td>
             </td>
           </tr>
 	</table>

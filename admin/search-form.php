@@ -5,16 +5,14 @@
    <link rel="stylesheet" media="screen" href="login.css" >
 </head>
 <body>
-<table align="center" border="1" bgcolor="#937541" width="600" cellpadding="8" cellspacing="0" height="415">
+<table align='center' border='0' bgcolor='black' width='1200' cellpadding='10' cellspacing='0' height='500'>
+  	<h1 style="font-size: 60px;background: black;color: grey; padding: 90px;text-align: center">PRISON MANAGEMENT SYSTEM</h1>
           <tr>
-            <td colspan="0" height="246"><img src="banner.gif" width="1045" height="230""></td>
-          </tr>
-          <tr>
-            <td colspan="8" bgcolor="green" height="3" align="center">
+            <td colspan="8" bgcolor="black" height="3" align="center">
 			
 			
 		<font size="5">  
-		 <a href="../index.php">Logout</a> |
+		 <a href="../index.php">Logout |</a> 
          <a href="adminpanel.php">Admin Panel</a>
           </font>
             </td>
@@ -53,23 +51,16 @@
      
       <td align="center" bgcolor="#FFFFFF"><h1> Seacrh Transfer By ID</h1>
         <form action="search2.php" method="get">
-           <label> National  Id :
+           <label> Prisoner  Id :
          <input type="text" name="keyname" />
        </label>
           <input type="submit" value="Search" />
       </form>
      <td height="191" bgcolor="#FFFFFF"></td></tr>
 
-<td width="7%" bgcolor="#FFFFFF"></td>
-<td width="2%" bgcolor="#FFFFFF"></td>
+<td><h4 style="color: white">
+&copy; Prison Mnanagement System</h4></td>
 
-
-<tr>
-<td bgcolor="#937541" colspan="3" align="center">
-<?php
-           include("footer.php");
-                ?>
-</tr>
 </table>
 </body>
 </html>

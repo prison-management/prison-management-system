@@ -4,7 +4,7 @@
   <link rel="stylesheet" media="screen" href="login.css" >
 </head>
 <body>
-	<table align='center' border='0' bgcolor='green' width='800' cellpadding='8' cellspacing='0' height='200'>
+	<table align='center' border='0' bgcolor='black' width='800' cellpadding='8' cellspacing='0' height='200'>
         
           <tr>
             <td colspan="3" bgcolor='#999999' valign='center'>
@@ -42,9 +42,9 @@ print "<script language=\"javascript\">
 
 <?php
 
-print "<table width='100%' border='0' cellpadding='3' cellspacing='2' bgcolor='green'>
-<caption><b>DELETE PRISONER RECORD</b></caption>
-<tr bgcolor='green'>
+print "<table width='100%' border='0' cellpadding='3' cellspacing='2' bgcolor='black'>
+<caption><h2><b>DELETE PRISONER RECORD</b></h2></caption>
+<tr bgcolor='silver'>
 <th>National id</th>
 <th width='10%'>Full Name</th>
 <th width='15%'>Date of Birth</th>
@@ -95,19 +95,13 @@ print"</table>";
           </tr>
           <tr>
 		  <td align="center"><a href="adminpanel.php" target="_parent">Panel Admin <b>|</b></a>
-			<a href="viewprisoners.php" target="_parent">View Prisoners<b>|</b></a>
-			<a href="index.php" target="_parent">Log out</a></td>
+			<a href="viewprisoners.php" target="_parent">View Prisoners</a></td>
 		
           </tr>
           <tr>
-            <td colspan='3' align='center' bgcolor='silver' height='1'>
-
-            	<?php
-           include("footer.php");
-                ?>
-					
-            </td>
-          </tr>
+<td bgcolor="grey" colspan="3" align="center">
+&copy; Prison Management System</td>
+</tr>
 	</table>
 </body>
 </head>

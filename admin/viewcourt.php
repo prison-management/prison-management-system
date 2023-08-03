@@ -4,7 +4,7 @@
    <link rel="stylesheet" media="screen" href="login.css" >
 </head>
 <body>
-	<table align='center' border='1' bgcolor='green' width='800' cellpadding='8' cellspacing='0' height='200'>
+	<table align='center' border='1' bgcolor='black' width='800' cellpadding='8' cellspacing='0' height='200'>
           <tr>
             <td bgcolor='#999999' valign='center'>
 
@@ -21,9 +21,9 @@ mysqli_connect("$host","$username","$password") or die("cannot connect");
 mysqli_select_db($con, "$db_name")or die("cannot connect");
 
 $sel= mysqli_query($con, "select * from $tbl_name");
-echo"<table align='center' width='100%' border='0' cellpadding='3' cellspacing='2' bgcolor='green'>
+echo"<table align='center' width='100%' border='0' cellpadding='3' cellspacing='2' bgcolor='black'>
 <caption><h3>COURT CASE</h3></caption>
-<tr bgcolor='green'>
+<tr bgcolor='grey'>
 <th width='3%'>National id</th>
 <th width='10%'>File Number</th>
 <th width='10%'>Date of Trial</th>
@@ -53,15 +53,13 @@ echo"</table>";
 			</td>
           </tr>
           <tr>
-			<td align="center"><a href="adminpanel.php" target="_parent">Panel Admin <b>|</b></a>
-		
-			<a href="index.php" target="_parent">Log out</a></td>
+			<td align="center"><a href="adminpanel.php" target="_parent">| Panel Admin <b>|</b></a></td>
 		
           </tr>
           <tr>
-            <td align='center' bgcolor='white' height='1'><?php
-           include("footer.php");
-                ?>
+            <td align='center' bgcolor='grey' height='1'>
+            <tr><td><h4 style="color: white">
+                 &copy; Prison Mnanagement System</h4></td></tr>
             </td>
           </tr>
 	</table>

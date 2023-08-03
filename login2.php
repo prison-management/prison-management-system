@@ -15,7 +15,7 @@
         <tr>
 	     	<font size="4">
          <a href="index.php">HOME |</a> 
-		     <a href="location.php"> ABOUT US</a> 
+		     <a href="aboutus.php"> ABOUT US</a> 
           </font>
             </td>
           </tr>
@@ -44,7 +44,7 @@
 <tr>
            <td> <img src="prisonbgpic.jpeg" width="1250" height="700"  alt=""/></td>
            <td><h4 style="color: white">
-           &copy; Prison Mnanagement System</h4></td>
+           &copy; Prison Management System</h4></td>
 </tr>
 
 </body>

@@ -4,7 +4,7 @@
   <link rel="stylesheet" media="screen" href="login.css" >
 </head>
 <body>
-	<table align='center' border='1' bgcolor='green' width='800' cellpadding='8' cellspacing='0' height='200'>
+	<table align='center' border='1' bgcolor='black' width='800' cellpadding='8' cellspacing='0' height='200'>
         
           <tr>
             <td colspan="3" bgcolor='grey' valign='center'>
@@ -43,13 +43,12 @@ print "<script language=\"javascript\">
 
 <?php
 
-print "<table width='100%' border='0' cellpadding='3' cellspacing='2' bgcolor='green'>
+print "<table width='100%' border='0' cellpadding='3' cellspacing='2' bgcolor='black'>
 <caption><b>DELETE TRANSFER </b></caption>
 <tr bgcolor='grey'>
 
 <th width='3%'>National id</th>
 <th width='10%'>File Number</th>
-<th width='15%'>From Prison</th>
 <th width='10%'>To Prison</th>
 <th width='10%'>Date of Transfer</th>
 
@@ -61,7 +60,6 @@ print "<form method=POST>";
 print"<tr bgcolor='white'>
 <td>$i<input type=\"hidden\" name=\"National_id\" value=\"$row[National_id]\"></td>
 <td>$row[File_num]</td>
-<td>$row[From_prison]</td>
 <td>$row[To_prison]</td>
 <td>$row[Dateoftransfer]</td>
 
@@ -84,10 +82,9 @@ print"</table>";
 		
           </tr>
           <tr>
-            <td colspan='3' align='center' bgcolor='silver' height='1'>
-            	<?php
-           include("footer.php");
-                ?>
+            <td align='center' bgcolor='white' height='1'>
+            <tr><td><h4 style="color: white">
+                &copy; Prison Management System</h4></td><tr>
             </td>
           </tr>
 	</table>

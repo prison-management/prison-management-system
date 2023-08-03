@@ -6,7 +6,6 @@ $host="localhost";
 $uname="root";
 $pass="";
 $database = "prisonpro";	
-
 $connection=mysqli_connect($host,$uname,$pass); 
 
 echo mysqli_error($connection);
@@ -26,13 +25,13 @@ $columns_total 	= mysqli_num_fields($sql);
 
 // Get The Field Name
 
-/*
+
 for ($i = 0; $i < $columns_total; $i++) {
 	$heading	=	mysqli_fetch_assoc($sql, $i);
 	$output		.= '"'.$heading.'",';
 }
 $output .="\n";
-*/
+
 // Get Records from the table
 
 while ($row = mysqli_fetch_array($sql)) {

@@ -70,12 +70,9 @@ echo"</table>";
 		
           </tr>
           <tr>
-            <td align='center' bgcolor='white' height='1'>
-					<?php
-           include("footer.php");
-                ?>
-            </td>
-          </tr>
+<td bgcolor="white" colspan="3" align="left">
+&copy; Prison Management System</td>
+</tr>
 	</table>
 </body>
 </head>

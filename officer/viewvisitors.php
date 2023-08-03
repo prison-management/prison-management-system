@@ -5,7 +5,7 @@
    <link rel="stylesheet" media="screen" href="login.css" >
 </head>
 <body>
-	<table align='center' border='0' bgcolor='green' width='1300' cellpadding='8' cellspacing='0' height='200'>
+	<table align='center' border='0' bgcolor='black' width='1300' cellpadding='8' cellspacing='0' height='200'>
 
           <tr>
             <td bgcolor='#999999' valign='center'>
@@ -22,7 +22,7 @@ $conn = mysqli_connect("$host","$username","$password") or die("cannot connect")
 mysqli_select_db($conn,"$db_name")or die("cannot connect");
 
 $sel= mysqli_query($conn,"select * from $tbl_name ORDER BY id DESC LIMIT 0,7");
-echo"<table align='center' width='100%' bgcolor='GREEN' border='0' bgcolor='green' cellpadding='3' cellspacing='2' bgcolor='silver'>
+echo"<table align='center' width='100%' bgcolor='black' border='0' bgcolor='black' cellpadding='3' cellspacing='2' bgcolor='silver'>
 <caption><h3>VISITORS INFORMATION</h3></caption>
 <tr bgcolor='#CCCCCC'>
 <th width='3%'>National id</th>
@@ -63,16 +63,13 @@ echo"</table>";
 			</td>
           </tr>
           <tr>
-			<td align="center" bgcolor='green'><a href="officerpanel.php" target="_parent">Officer Admin <b>|</b></a>
-      <a href="visitorep.php" target="_parent">Report <b>|</b></a>
-			<a href="index.php" target="_parent">Log out</a></td>
+			<td align="center" bgcolor='black'><a href="officerpanel.php" target="_parent">Officer Admin </a></td>
 		
           </tr>
           <tr>
             <td align='center' bgcolor='white' height='1'>
-					<?php
-           include("footer.php");
-                ?>
+            <tr><td><h4 style="color: white">
+             &copy; Prison Mnanagement System</h4></td></tr>
             </td>
           </tr>
 	</table>

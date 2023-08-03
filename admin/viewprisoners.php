@@ -1,12 +1,12 @@
 <html>
 <head>
-  <title>PRIOSONER DETAILS  </title>
+  <title>PRISONER DETAILS  </title>
    <link rel="stylesheet" media="screen" href="login.css" >
 </head>
 <body>
-	<table align='center' border='0' bgcolor='green' width='1000' cellpadding='8' cellspacing='0' height='200'>
+	<table align='center' border='0' bgcolor='black' width='1000' cellpadding='8' cellspacing='0' height='590'>
           <tr>
-            <td bgcolor='#999999' valign='center'>
+            <td bgcolor='#999999' align='center'>
 
 <?php
 
@@ -21,9 +21,9 @@ mysqli_connect("$host","$username","$password") or die("cannot connect");
 mysqli_select_db($con, "$db_name")or die("cannot connect");
 
 $sel= mysqli_query($con, "select * from $tbl_name");
-echo"<table align='center' width='100%' border='0' cellpadding='3' cellspacing='2' bgcolor='green'>
-<caption><h3>PRISONER INFORMATION</h3></caption>
-<tr bgcolor='green'>
+echo"<table align='center' width='100%' border='0' cellpadding='3' cellspacing='2' bgcolor='black'>
+<caption><h1>PRISONER INFORMATION</h1></caption>
+<tr bgcolor='grey'>
 <th width='3%'>National id</th>
 <th width='10%'>Full Name</th>
 <th width='10%'>Date of Birth</th>
@@ -37,7 +37,6 @@ echo"<table align='center' width='100%' border='0' cellpadding='3' cellspacing='
 <th width='15%'>Offence</th>
 
 <th width='10%'>File Number</th>
-<th width='10%'>Prison</th>
 </tr>";
 
    while($row=mysqli_fetch_array ($sel))
@@ -57,7 +56,6 @@ echo  "<td width='10%'>".$row ['Marital']."</td>";
 echo  "<td width='10%'>".$row ['Offence']. "</td>";
 
 echo  "<td width='10%'>".$row ['File_num']."</td>";
-echo  "<td width='10%'>".$row ['prison']."</td>";
 echo '<td width="3%"><b><a href="deleteprisoners.php?id=' . $row['id'] . '">Delete</a></font></b></td>';
 
 
@@ -71,16 +69,13 @@ echo"</table>";
 			</td>
           </tr>
           <tr>
-			<td align="center"><a href="adminpanel.php" target="_parent">Panel Admin <b>|</b></a>
-			
-			<a href="index.php" target="_parent">Log out</a></td>
+			<td align="center"><a href="adminpanel.php" target="_parent">| Panel Admin <b>|</b></a></td>
 		
           </tr>
           <tr>
             <td align='center' bgcolor='white' height='1'>
-              <?php
-           include("footer.php");
-                ?>
+            <tr><td><h4 style="color: white">
+                &copy; Prison Mnanagement System</h4></td><tr>
             </td>
           </tr>
 	</table>

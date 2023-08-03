@@ -4,12 +4,11 @@
 <link rel="stylesheet" media="screen" href="login.css" >
 </head>
 <body>
-<table border="1" bgcolor="#FFFFFF" align="center" width="54%">
-<tr bgcolor="#FF0000">
+<table border="1" bgcolor="white" align="center" width="54%">
+<tr bgcolor="black">
 <td align="center">
 <font size="5">
 <a href="officerpanel.php">HOME</a> 
-<a href="transfer.php">TRANSFER</a> 
 </font>
 </td>
 </tr>
@@ -19,16 +18,13 @@
 <form action="validatecourt.php" method="post">
 <table bgcolor="white" height="431" border="0" align="center" width="50%">
 <td width="34%" bgcolor="#FFFFFF"><b>National Id:</b></td>
-<td width="66%" bgcolor="#FFFFFF"><input type="text" name="Nationalid" size=8 maxlength=8 required placeholder="99999"/></td>
+<td width="66%" bgcolor="#FFFFFF"><input type="text" name="Nationalid" size=4 maxlength=7 required placeholder="9999"/></td>
 </tr>
 <tr>
 <td bgcolor="#FFFFFF"><b>File Number:</b></td>
-<td bgcolor="#FFFFFF"><input type="text" name="Filenum" size=6 maxlength=7 required placeholder="NBI-9999"/></td>
+<td bgcolor="#FFFFFF"><input type="text" name="Filenum" size=6 maxlength=7 required placeholder="XXX"/></td>
 </tr>
-<!-- <tr> 
-<td bgcolor="#FFFFFF"><b>Date Of Trial:</b></td>
-<td bgcolor="#FFFFFF"><input type="text" name="dot" /></td>
-</tr>-->
+
 	<tr><td><label for="on"><b>Date Of Trial:</b></label>
 		      	<td><select name="month" required>
 				<option selected="selected" value="01">January</option>
@@ -49,7 +45,14 @@
 				
 		      	<td><select name="year" required>
 				<option selected="selected" value="01">2014</option>
-				<option value="02">2015</option></td>
+				<option value="02">2015</option>
+				<option value="03">2016</option>
+				<option value="04">2017</option>			
+				<option value="05">2018</option>
+				<option value="06">2019</option>
+				<option value="07">2020</option>
+				<option value="09">2021</option>
+				<option value="10">2022</option></td>
 				
 				</select>
 			</td>
@@ -65,28 +68,21 @@
 		
 <tr><td bgcolor="#FFFFFF"><b>Court Location:</b></td>
         <td> <select name="location">
-		 <option>Milimani Court</option>
-        <option>Kibera Court</option>
-		<option>Maseno Court</option>
-		<option>Kwale Court</option>
-        <option>Kisumu Court</option>
-		<option>Shanzu Court</option></td></tr>
-		<tr>
-<td bgcolor="#FFFFFF"><b>Judge Name:</b></td>
-<td bgcolor="#FFFFFF"><input type="text" name="judge" required placeholder="Jury President" size=25 maxlength=25 ></td>
-</tr>
+		<option>Thiruvanthapuram Court</option>
+		<option>Thrissur Court</option>
+        <option>Ernakulam Court</option>
+		<option>Aluva Court</option></td></tr>
+		
 
-      <td height="26" bgcolor="#FFFFFF" align="center"><input type="submit" value="SAVE" /></td>
+      <td height="26" bgcolor="" align="center"><input type="submit" value="SAVE" /></td>
  </tr>
 </table>
 </form>
 </td>
 </tr>
 <tr>
-	 <?php
-           include("footer.php");
-                ?>
-
+<td bgcolor="white" colspan="3" align="left">
+&copy; Prison Management System</td>
 </tr>
 </table>
 </body>

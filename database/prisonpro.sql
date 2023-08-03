@@ -66,26 +66,7 @@ INSERT INTO `announce` (`to`, `Id`, `subject`, `message`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `capacity`
---
 
-CREATE TABLE IF NOT EXISTS `capacity` (
-  `id` int(23) NOT NULL AUTO_INCREMENT,
-  `number` int(34) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
-
---
--- Dumping data for table `capacity`
---
-
-INSERT INTO `capacity` (`id`, `number`) VALUES
-(1, 500),
-(2, 750),
-(3, 1000),
-(4, 1500);
-
--- --------------------------------------------------------
 
 --
 -- Table structure for table `court`
@@ -103,30 +84,7 @@ CREATE TABLE IF NOT EXISTS `court` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `newprison`
---
 
-CREATE TABLE IF NOT EXISTS `newprison` (
-  `pno` int(25) NOT NULL AUTO_INCREMENT,
-  `pname` varchar(25) NOT NULL,
-  `location` varchar(25) NOT NULL,
-  `opendate` varchar(25) NOT NULL,
-  `contact` int(25) NOT NULL,
-  `capacity` int(25) NOT NULL,
-  PRIMARY KEY (`pno`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=23841 ;
-
---
--- Dumping data for table `newprison`
---
-
-INSERT INTO `newprison` (`pno`, `pname`, `location`, `opendate`, `contact`, `capacity`) VALUES
-(7, 'LAMU', 'LAMU', '2015-02-12', 765546353, 500),
-(23340, 'JNKIM', 'NAIROBI', '2015-02-12', 2147483647, 0),
-(23344, 'JNKIM', 'NAIROBI', '2015-02-12', 2147483647, 0),
-(23840, 'JNKIM', 'NAIROBI', '2015-02-12', 2147483647, 0);
-
--- --------------------------------------------------------
 
 --
 -- Table structure for table `officer`
@@ -135,7 +93,6 @@ INSERT INTO `newprison` (`pno`, `pname`, `location`, `opendate`, `contact`, `cap
 CREATE TABLE IF NOT EXISTS `officer` (
   `National_id` int(11) NOT NULL,
   `Telephone` int(12) NOT NULL,
-  `From_prison` varchar(12) NOT NULL,
   `To_prison` varchar(12) NOT NULL,
   `Dateoftransfer` date NOT NULL,
   PRIMARY KEY (`National_id`)
@@ -145,8 +102,8 @@ CREATE TABLE IF NOT EXISTS `officer` (
 -- Dumping data for table `officer`
 --
 
-INSERT INTO `officer` (`National_id`, `Telephone`, `From_prison`, `To_prison`, `Dateoftransfer`) VALUES
-(674484, 2147483647, 'LANGATA', 'SHIMOLATEWA', '2015-01-20');
+INSERT INTO `officer` (`National_id`, `Telephone`, `To_prison`, `Dateoftransfer`) VALUES
+(674484, 2147483647 , 'SHIMOLATEWA', '2015-01-20');
 
 -- --------------------------------------------------------
 
@@ -187,7 +144,7 @@ CREATE TABLE IF NOT EXISTS `policestation_tbl` (
   `Address` varchar(100) NOT NULL,
   `City` varchar(20) NOT NULL,
   `Email` varchar(30) NOT NULL,
-  `Mobile` int(11) NOT NULL,
+  `Mobile` int(15) NOT NULL,
   `UserName` varchar(20) NOT NULL,
   `Password` varchar(20) NOT NULL,
   PRIMARY KEY (`Station_Id`)
@@ -220,7 +177,6 @@ CREATE TABLE IF NOT EXISTS `registration` (
   `Offence` varchar(90) NOT NULL,
   `Sentence` varchar(13) NOT NULL,
   `File_num` varchar(12) NOT NULL,
-  `prison` varchar(25) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -228,10 +184,10 @@ CREATE TABLE IF NOT EXISTS `registration` (
 -- Dumping data for table `registration`
 --
 
-INSERT INTO `registration` (`id`, `Full_Name`, `DOB`, `datein`, `dateout`, `Address`, `County`, `Gender`, `Education`, `Marital`, `Offence`, `Sentence`, `File_num`, `prison`) VALUES
+INSERT INTO `registration` (`id`, `Full_Name`, `DOB`, `datein`, `dateout`, `Address`, `County`, `Gender`, `Education`, `Marital`, `Offence`, `Sentence`, `File_num`, ) VALUES
 (6567, 'Thomas Owino Kamau', '0000-00-00', '01/24/2011', '10/12/2016', 'Kiseria', '02', '01', '01', '04', 'i m oan', '01', '09078766', 'LANGATA'),
 (9786575, 'Owino Kamau', '0000-00-00', '01/24/2014', '10/12/2016', '', '', '01', '04', '01', 'kill peopl', '05', '88999777', 'LANGATA'),
-(89758536, 'WENJO', '2003-03-16', '2003-03-16', '2003-03-16', 'Kabamzqre', 'Nairobi', 'Male', 'Never', 'Divorced', 'Killing', '2 years', 'NBI-06654', '');
+(89758536, 'WENJO', '2003-03-16', '2003-03-16', '2003-03-16', 'Kabamzqre', 'Nairobi', 'Male', 'Never', 'Divorced', 'Killing', '2 years', 'NBI-06654);
 
 -- --------------------------------------------------------
 
@@ -300,7 +256,7 @@ CREATE TABLE IF NOT EXISTS `visitor` (
   `timein` varchar(24) NOT NULL,
   `timeout` varchar(23) NOT NULL,
   `relationship` varchar(25) NOT NULL,
-  `telephone` int(13) NOT NULL,
+  `telephone` int(15) NOT NULL,
   `prisoner` varchar(25) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -310,7 +266,7 @@ CREATE TABLE IF NOT EXISTS `visitor` (
 --
 
 INSERT INTO `visitor` (`id`, `fullname`, `address`, `dateofvisit`, `timein`, `timeout`, `relationship`, `telephone`, `prisoner`) VALUES
-(89999089, 'Emmillie', 'Rongai', '2015-02-12', '12:00am', '5:00pm', 'other', 2147483647, 'Qin Yun');
+(89999089, 'Emmillie', 'Rongai', '2015-02-12', '12:00am', '5:00pm', 'other', '9999999999', 'Qin Yun');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

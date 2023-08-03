@@ -35,7 +35,6 @@ if(mysqli_num_rows($results) >= 1)
 
 		$output .= "National ID: " . $row['National_id'] . "<br />";
 		$output .= "File number: " . $row['File_num'] . "<br />";
-		$output .= "From prison: " . $row['From_prison'] . "<br />";
 		$output .= "To prison: " . $row['To_prison'] . "<br />";
 		$output .= "Date of tarnsfer: " . $row['Dateoftransfer'] . "<br /><br />";
 	}

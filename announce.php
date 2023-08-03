@@ -6,14 +6,22 @@
 <body>
 <table width="1260" height="580"  bgcolor="white">
 
- <?php
-           include("menu.php");
-                ?>
+<tr>
+     <td colspan="5" bgcolor="#yellow" height="3" align="center">
+          <h1 style="color:white; font: size 25px;">COMPLAIN FORM</h1>
+		      <h1 class="bg-primary"><font size="5">
+	           <a href="index.php">Home |</a> 	 
+		        <a href="login2.php">LoginAccess |</a> 
+		        <a href="aboutus.php">About Us</a>
+		        
+		        </font></h1>
+            </td>
+        </tr>
 <td>
 <form action="processannounce.php" method="post">
 <table bgcolor="white" height="190" border="0" align="center" width="52%">
 <td width="27%" height="46" bgcolor="#FFFFFF"><b>To:</b></td>
-<td width="73%" bgcolor="#FFFFFF"><input type="text" name="To" /></td>
+<td width="73%" bgcolor="#FFFFFF"><input type="text " name="To" /></td>
 </tr>
 <tr>
 <td height="51" bgcolor="#FFFFFF"><b>Id:</b></td>
@@ -37,7 +45,7 @@
 </td>
 <tr width="1%" bgcolor="#FFFFFF"></tr>
   <td bgcolor="white" colspan="0" border ="0" align="center"><br>
-   &copy; Prison Mnanagement System</td>
+   &copy; Prison Management System</td>
 </table>
 </body>
 </html>

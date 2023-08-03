@@ -10,7 +10,6 @@ if (mysqli_connect_errno()) {
 
 $Nid= mysqli_real_escape_string($con,$_POST['Nid']);
 $Filenum=mysqli_real_escape_string($con,$_POST['Filenum']);
-$From= mysqli_real_escape_string($con,$_POST['From']);
 $To=mysqli_real_escape_string($con,$_POST['To']);
 //deal with date and concatenate variables month, day, year
  $month= mysqli_real_escape_string($con,$_POST['month']);
@@ -20,8 +19,8 @@ $dateoftransfer=$year.'/'.$month.'/'.$day;
  
 
 
- $sql = "INSERT INTO transfer (National_id, File_num, From_prison, To_prison, Dateoftransfer) 
-VALUES ('$Nid', '$Filenum', '$From', '$To', '$dateoftransfer');";
+ $sql = "INSERT INTO transfer (National_id, File_num , To_prison, Dateoftransfer) 
+VALUES ('$Nid', '$Filenum',  '$To', '$dateoftransfer');";
 
 
 

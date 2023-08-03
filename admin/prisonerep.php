@@ -6,7 +6,6 @@ $host="localhost";
 $uname="root";
 $pass="";
 $database = "prisonpro";	
-
 $connection=mysqli_connect($host,$uname,$pass); 
 
 echo mysqli_error($connection);

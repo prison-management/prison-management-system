@@ -9,31 +9,32 @@
 </head>
 <body> 
 
-	<table align="center" border="0" bgcolor="white" width="400" cellpadding="9" cellspacing="0" height="525">
+	<table align="center" border="0" bgcolor="white" width="900" cellpadding="9" cellspacing="0" height="525">
           <tr>
-          <h2 style="font-size:60px ;background:white; padding: 60px;"> Officer Registration Form</h2>
+          <h2 style="font-size:60px ;background:white; padding: 60px;">Officer Registration Form</h2>
           </tr>  
           <tr>
             <tr>
-            <a href="userpanel.php" style="font-size:30px;color:black">|HOME|</a><br>  
+            <a href="adminpanel.php" style="font-size:30px;color:black;align:center">|HOME|</a>  
           </tr></br>
            
           </tr>
           <tr>
-            <td width="50%" align="center" bgcolor="white">
+            <td width="50%"  bgcolor="white">
        
 <div id="content" class="ctrdiv">
-	<form id="frmReg" method="POST" action="validateofficer.php"><br>
+	<form id="frmReg" method="POST" action="newofficerval.php">
+       <h2 id="hdr_title"><u>Officer Registration Form </u> </h2>
             <div class="control_input">
-            <label for="id" class="label"> Id</label><input type="text" id="id" name="id" size=14  maxlength=8
-                class="reg_fields" required placeholder="00000"  />
-            </div>
+            <label for="id" class="label">Prison Id</label><input type="text" id="id" name="id" size=14  maxlength=8 
+                class="reg_fields" required placeholder="0101"  />
+            </div><br>
             <div class="control_input">
                 <label for="fullname" class="label">Full Name</label><input type="text" id="fullname" name="fullname" class="reg_fields" required placeholder="Rinu"/>
-            </div>
+            </div><br>
             <div class="control_input">
                 <label for="address" class="label">Address</label><input type="text" id="address" name="address" class="reg_fields" required placeholder="address"/>
-            </div>
+            </div><br>
            
              
             <div class="control_input">               
@@ -64,7 +65,7 @@
                     </td>
                     </tr></table>
                 </div>
-            </div>
+            </div><br>
 
             <div class="control_input">
                 <div style="display: inline-block;">
@@ -81,12 +82,12 @@
                         </select>
                     </td>
                 </table>
-                </div class="control_input">
+                </div class="control_input"><br>
 
             <div class="control_input">
                 <label for="uemail" class="label">Telephone No.</label><input type="text" id="telephone" name="telephone"  size=11  maxlength=11 
                 class="reg_fields" required placeholder="9456081472" class="reg_fields"/>
-            </div class="control_input">
+            </div class="control_input"><br>
 
         
 
@@ -108,7 +109,7 @@
                         </select>
                     </td>
                 </table>
-                </div class="control_input">
+                </div class="control_input"><br>
 
                  <div class="control_input">
                 <div style="display: inline-block;">
@@ -126,13 +127,13 @@
                         </select>
                     </td>
                 </table>
-                </div class="control_input">
+                </div class="control_input"><br>
                  
            
 
             <div class="control_input">
-                <input type="submit" name="signup" id="signup" value="Submit" title="" color="black" border="0">
-             </div class="control_input">
+                <input type="submit" name="signup" id="signup" value="Submit" title="" color="grey" border="0">
+             </div class="control_input"><br>
             
             <div id="validation_msg">
             </div>

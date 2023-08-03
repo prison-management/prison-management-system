@@ -5,7 +5,7 @@
    <link rel="stylesheet" media="screen" href="login.css" >
 </head>
 <body>
-	<table align='center' border='0' bgcolor='green' width='1300' cellpadding='8' cellspacing='0' height='200'>
+	<table align='center' border='0' bgcolor='black' width='1300' cellpadding='8' cellspacing='0' height='200'>
 
           <tr>
             <td bgcolor='#999999' valign='center'>
@@ -22,8 +22,8 @@ mysqli_connect("$host","$username","$password") or die("cannot connect");
 mysqli_select_db($con, "$db_name")or die("cannot connect");
 
 $sel= mysqli_query($con, "select * from $tbl_name ORDER BY id DESC LIMIT 0,7");
-echo"<table align='center' width='100%' bgcolor='GREEN' border='0' bgcolor='green' cellpadding='3' cellspacing='2' bgcolor='silver'>
-<caption><h3>VISITORS INFORMATION</h3></caption>
+echo"<table align='center' width='100%' bgcolor='black' border='0' bgcolor='grey' cellpadding='3' cellspacing='2' bgcolor='silver'>
+<caption><h3>OFFICER INFORMATION</h3></caption>
 <tr bgcolor='#CCCCCC'>
 <th width='3%'>National id</th>
 <th width='10%'>Full Name</th>
@@ -66,16 +66,13 @@ echo"</table>";
 			</td>
           </tr>
           <tr>
-			<td align="center" bgcolor='green'><a href="adminpanel.php" target="_parent">Officer Admin <b>|</b></a>
-      <a href="../admin/officereport.php" target="_parent">Report <b>|</b></a>
-			<a href="index.php" target="_parent">Log out</a></td>
+			<td align="center" bgcolor='black'><a href="adminpanel.php" target="_parent">| Admin Panel <b>|</b></a></td>
 		
           </tr>
           <tr>
-            <td align='center' bgcolor='white' height='1'>
-					<?php
-           include("footer.php");
-                ?>
+            <td align='center' bgcolor='grey' height='1'>
+            <tr><td><h4 style="color: white">
+               &copy; Prison Mnanagement System</h4></td></tr>
             </td>
           </tr>
 	</table>

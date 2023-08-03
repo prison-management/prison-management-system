@@ -5,39 +5,21 @@
    <link rel="stylesheet" media="screen" href="login.css" >
 </head>
 <body>
-	<table align='center' border='1' bgcolor='green' width='820' cellpadding='10' cellspacing='0' height='325'>
-          <tr>
-            <td colspan='3' height='2'><img src='banner.gif'></td>
-          </tr>
-       
+    <table align='center' border='0' bgcolor='black' width='1200' cellpadding='10' cellspacing='0' height='500'>
+  	<h1 style="font-size: 60px;background: black;color: grey; padding: 90px;text-align: center">PRISON MANAGEMENT SYSTEM</h1>
           <tr>
           	 <tr>
-            <td colspan="3" bgcolor="#FF0000" height="1" align="center">
+            <td colspan="3" bgcolor="black" height="1" align="center">
             <font size="4">
-            
-            <a href="court.php">COURT</a>  |
-            <a href="transfer.php">TRANSFER </a>|
-            <a href="newprison.php">NEW PRISON </a> |
-            <a href="search-form.php">SEARCH </a> 
-            <!-- <a href="search.php">SEARCH</a> -->
+            <a href="search-form.php">SEARCH |</a> 
+            <a href="../index.php">LOG OUT </a>
           </font>
-            </td>
-
+          </td>
           </tr>
-
-            <td height='1' colspan='3' align='right' bgcolor="#006600">&nbsp;</td>
-
           </tr>
-
-
-
-          <tr>
-
-            <td width='4%' bgcolor='#FFFFFF' valign='top'>
-               
-
-            <td width='71%' valign='top' bgcolor="#FFFFFF">
-
+          <tr>               
+   <td width='71%' valign='top' bgcolor="white">
+<br>
 <h3 align='center'> PRISON MNGNT  SYSTEM FOR THE OFFICER  </h3>
 <P align='justify'><font face='Arial, Helvetica, sans-serif'>
 	This user has the abilty to view information,edit and delete.
@@ -45,44 +27,31 @@
  services to users nd here the administrator can add and upload information, update, delete, view the record added. 
  The administrator can also change his account for more security.
 
-			</td>
-            <td width='25%' bgcolor='GREEN'  valign='top'>
-			
-	
-<table border='0' align='center'>
 <tr>
-<td width="252"  ">
-<h3>  OFFICER PANNEL : </h3><br/>
+<td width="252" bgcolor="silver" >
+<h3>  OFFICER PANNEL : </h3>
 <ul>
-	
-
-			<div id="menu">
+  <div id="menu" >
 				<ul>
 					
-					<li><a href="viewannounce1.php">Comment</a></li>
-					<li><a href="viewprisoners1.php">Prisoners Info</a></li> 
-					<li><a href="viewcourt1.php">Court Information</a></li>
-          <li><a href="viewvisitors.php">Visitors</a></li>
-          <li><a href="viewnewprison.php">New Prison</a></li>
-          <li><a href="viewofficer.php">Officer</a></li>
-          <li><a href="viewtransfer1.php">Prisoners Transfer</a></li>
- 					<li><a href="../index.php">Log Out</a></li>
-
+					<li><a href="viewannounce1.php" >View Comment</a></li>
+					<li><a href="viewprisoners1.php">View Prisoners Information</a></li> 
+					<li><a href="viewcourt1.php">View Court Information</a></li>
+          <li><a href="viewvisitors.php">View Visitors Information</a></li>
+          <li><a href="viewofficer.php">View Officers Information</a></li>
+          <li><a href="court.php">Register Court</a></li>
+          <li><a href="transfer.php">Prison Transfer Form</a></li>
 				</ul>
 				</ul>
 			</div>
 </td>
-</tr>
-</table>
-	
+</tr>	
 			</td>
-          </tr>
-           <?php
-           include("footer.php");
-                ?>
-          <tr>
-           
-          </tr>
+      <tr>
+        <td><h4 style="color: white">
+         &copy; Prison Management System</h4></td>
+      </tr>           
+      </tr>
 	</table>
 </body>
 </head>

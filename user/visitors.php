@@ -14,19 +14,15 @@
           <h2 style="font-size:60px ;background:white; padding: 60px;"> Visitor Registration Form</h2>
           </tr>  
           <tr>
-            <tr>
-            <a href="userpanel.php" style="font-size:30px;color:black">|HOME|</a>  
+            <a href="userpanel.php" style="font-size:30px;color:black">|HOME|</a> <br>
           </tr></br>
-           
-          </tr>
           <tr>
-            <td width="25%" bgcolor="#FFFFFF" >&nbsp;&nbsp;
             <td width="50%" align="center" bgcolor="white">      
 <div id="content" class="ctrdiv">
 	<form id="frmReg" method="POST" action="validatevisitor.php">
             <div class="control_input">
             <label for="id" class="label">Visitor Id</label><input type="text" id="id" name="id" size=14  maxlength=8 
-                class="reg_fields" required placeholder="XX101"  />
+                class="reg_fields" required placeholder="XXXX"  />
             </div>
             <div class="control_input">
                 <label for="fullname" class="label">Full Name</label><input type="text" id="fullname" name="fullname" class="reg_fields" required placeholder="John Joy"/>
@@ -138,6 +134,7 @@
                            <option>Husband</option>
                            <option>Daughter/Son</option>
                            <option>Relative</option>
+                           <option>Sibling</option>
                           <option>other</option>
                         </select>
                     </td>

@@ -17,11 +17,10 @@ $Filenum=mysqli_real_escape_string($con,$_POST['Filenum']);
 $dateoftrial=$year.'/'.$month.'/'.$day;
 $sentence= mysqli_real_escape_string($con,$_POST['sentence']);
 $location=mysqli_real_escape_string($con,$_POST['location']);
-$judge=mysqli_real_escape_string($con,$_POST['judge']);
  
 
- $sql = "INSERT INTO court (National_id, File_number, Dateoftrial, Sentence, Location, Judge) 
-VALUES ('$Nationalid', '$Filenum', '$dateoftrial', '$sentence', '$location', '$judge');";
+ $sql = "INSERT INTO court (National_id, File_number, Dateoftrial, Sentence, Location) 
+VALUES ('$Nationalid', '$Filenum', '$dateoftrial', '$sentence', '$location');";
 
 
 

@@ -25,12 +25,12 @@ $sql 			= mysqli_query($connection, "select * from $table");
 $columns_total 	= mysqli_num_fields($sql);
 
 // Get The Field Name
-/*
+
 for ($i = 0; $i < $columns_total; $i++) {
 	$heading	=	mysqli_fetch_assoc($sql, $i);
 	$output		.= '"'.$heading.'",';
 }
-*/
+
 $output .="\n";
 
 // Get Records from the table

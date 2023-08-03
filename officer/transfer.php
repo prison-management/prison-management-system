@@ -6,7 +6,7 @@
 <body>
 <table width="60%" height="91" border="1" align="center" bgcolor="#FFFFFF">
 <tr>
-<td height="33" align="center" bgcolor="green">
+<td height="33" align="center" bgcolor="black">
 <font size="5">
 <a href="officerpanel.php">HOME</a> 
  
@@ -18,48 +18,31 @@
 	<h2 class="bg-primary" align="center">TRANSFER FORM FOR PRISONNER</h2>
 <form action="validatetransfer.php" method="post">
 <table bgcolor="white" height="431" border="0" align="center" width="50%">
-
-
-<tr>
-<td><b>National Id </b> </td>
-<td><select name="Nid">
-    <option value="">--Select your National Id--</option>
-    <?php
-    mysql_connect('localhost', 'root', '');
-    mysql_select_db('prisonpro');
- $msql = mysql_query("SELECT * FROM registration");
- while($m_row = mysql_fetch_array($msql))        
-        echo("<option value = '" . $m_row['id'] . "'>" . $m_row['id'] . "</option>");
-    ?>
-</select></td>
+<td width="34%" bgcolor="#FFFFFF"><b>National Id:</b></td>
+<td width="66%" bgcolor="#FFFFFF"><input type="text" size=7  maxlength=5 name="Nid" required placeholder="0000" /></td>
 </tr>
-
-<tr>
-<td><b>File Number </b> </td>
-<td><select name="Filenum">
-    <option value="">--Select your File--</option>
-    <?php
-    mysql_connect('localhost', 'root', '');
-    mysql_select_db('prisonpro');
- $msql = mysql_query("SELECT * FROM registration");
- while($m_row = mysql_fetch_array($msql))        
-        echo("<option value = '" . $m_row['File_num'] . "'>" . $m_row['File_num'] . "</option>");
-    ?>
-</select></td>
+<td width="34%" bgcolor="#FFFFFF"><b>File Number:</b></td>
+<td width="66%" bgcolor="#FFFFFF"><input type="text" size=7 maxlength=8  name="Filenum" required placeholder="XXX" /></td>
 </tr>
 
 
-
-<tr><td bgcolor="#FFFFFF"><b>From Prison:</b></td>
-        <td> <select name="From">
-        <option>LANGATA</option>
-		<option>KODIAGA</option>
-		<option>SHIMOLATEWA</option></td></tr>
 	<tr><td bgcolor="#FFFFFF"><b>To Prison:</b></td>
         <td> <select name="To">
-		<option>LANGATA</option>
-		<option>KODIAGA</option>
-		<option>SHIMOLATEWA</option></td></tr>
+		                    <option value="01">Alapuzha</option>
+                            <option value="02">Ernakulam</option>
+                            <option value="03">Idukki</option>
+                            <option value="04">Kannur</option>
+                            <option value="04">Kasaragod</option>
+                            <option value="06">Kollam</option>
+                            <option value="07">Kozhikode</option>
+                            <option value="08">Kollam</option>
+                            <option value="09">Malapuram</option>
+                            <option value="10">Palakkad</option>
+                            <option value="11">Pathanamttitta</option>
+                            <option value="12">Thrissure</option>
+                            <option value="13">Thrivandrum</option>
+                            <option value="14">Wayyanad</option>
+	   </td></tr>
 
 			<tr><td><label for="on"><b>Date of Transfer:</b></label>
 		      	<td><select name="month" required>
@@ -81,17 +64,19 @@
 				
 		      	<td><select name="year" required>
 				<option selected="selected" value="01">2014</option>
-				<option value="02">2015</option></td>
-				<!-- di -->
+				<option value="02">2015</option>
+				<option value="03">2016</option>
+				<option value="04">2017</option>
+				<option value="05">2018</option>
+				<option value="06">2019</option>
+				<option value="07">2020</option>
+				<option value="08">2021</option>
+				<option value="09">2022</option>
+				<option value="10">2023</option></td>
 				</select>
 			</td>
 </tr>
-        
-<!-- <tr>
-<td bgcolor="#FFFFFF"><b>Date of Transfer:</b></td>
-<td bgcolor="#FFFFFF"><input type="text" name="dot" /></td>
-</tr>
- -->
+
   <td height="26" bgcolor="#FFFFFF" align="center"><input type="submit" value="Add" /></td>
  </tr>
 </table>
@@ -99,9 +84,9 @@
 </td>
 <td bgcolor="#FFFFFF"></tr>
 <tr>
-	 <?php
-           include("footer.php");
-                ?>
+<td>
+          <h4 style="color: black">
+          &copy; Prison Management System</h4></td>
 
 </tr>
 </table>

@@ -11,27 +11,27 @@
 	<link rel="stylesheet" media="screen" href="login.css" >
 </head>
 <body>
-<table align="center" border="0" bgcolor="white" width="400" cellpadding="9" cellspacing="0" height="525">
+<table align="center" border="0" bgcolor="white" width="1000" cellpadding="9" cellspacing="0" height="525">
           <tr>
           <h2 style="font-size:60px ;background:white; padding: 60px;"> Prisoner Registration Form</h2>
           </tr>  
           <tr>
             <tr>
-            <a href="userpanel.php" style="font-size:30px;color:black">|HOME|</a> <br>
+            <a href="adminpanel.php" style="font-size:30px;color:black">|HOME|</a> <br>
           </tr></br>
            
           </tr>
           <tr>
-            <td width="50%" align="center" bgcolor="white">
+            <td width="50%"  bgcolor="white">
     
           <div id="content" class="ctrdiv">
-           <form id="frmReg" method="POST" action="prisonerval.php">
+           <form id="frmReg" method="POST" action="prisonval.php">
             <div class="control_input">
                 <label for="Nid" class="label">National Id</label><input type="text" id="Nid" name="Nid" size=8  maxlength=8 class="reg_fields" required placeholder="0000"  /> 
-            </div>
+            </div><br>
             <div class="control_input">
                 <label for="Fname" class="label">Full Name</label><input type="text" id="Fname" name="Fname" class="reg_fields" required placeholder="anotony mathew"/>
-            </div>
+            </div><br>
 
             <div class="control_input">               
                 <div style="display: inline-block;">
@@ -61,7 +61,7 @@
                     </td>
                     </tr></table>
                 </div>
-            </div>
+            </div><br>
 
             <div class="control_input">               
                 <div style="display: inline-block;">
@@ -91,7 +91,7 @@
                     </td>
                     </tr></table>
                 </div>
-            </div>
+            </div><br>
 
              <div class="control_input">               
                 <div style="display: inline-block;">
@@ -121,10 +121,11 @@
                     </td>
                     </tr></table>
                 </div>
-            </div>
+            </div><br>
 
             <div class="control_input">
-            <label for="address1" class="label">Address</label><input type="text" id="address" name="address1" class="reg_fields" required placeholder="address"/>
+                <label for="address" class="label">Address</label>
+                <textarea cols="17" rows="4" name="Address" required placeholder="address"></textarea>
             </div>
             
              <div style="display: inline-block;">
@@ -152,7 +153,7 @@
                         </select>
                     </td>
                     </tr></table>
-                </div></br>
+                </div><br>
 
             <div style="display: inline-block;">
                 <table><tr>
@@ -186,7 +187,7 @@
                         </select>
                     </td>
                     </tr></table>
-                </div></br>
+                </div><br>
 
                 <div style="display: inline-block;">
                 <table><tr>
@@ -203,7 +204,7 @@
                         </select>
                     </td>
                     </tr></table>
-                </div></br>
+                </div><br>
              
                 <div class="control_input">
                 <label for="offence" class="label">Offence</label>
@@ -228,12 +229,12 @@
                         </select>
                     </td>
                     </tr></table>
-                </div></br>
+                </div><br>
 
 
             <div class="control_input">
                 <label for="Filenum" class="label">File Number</label><input type="text" id="Filenum" name="Filenum"  size=8  maxlength=8 class="reg_fields" required placeholder="xxx"/>
-            </div>
+            </div><br>
              
                 <div class="control_input">
                 <input type="submit" name="signup" id="signup" value="Submit" >

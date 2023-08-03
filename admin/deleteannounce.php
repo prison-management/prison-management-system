@@ -4,7 +4,7 @@
   <link rel="stylesheet" media="screen" href="login.css" >
 </head>
 <body>
-	<table align='center' border='1' bgcolor='green' width='700' cellpadding='8' cellspacing='0' height='200'>
+	<table align='center' border='1' bgcolor='black' width='700' cellpadding='8' cellspacing='0' height='200'>
          
          
           <tr>
@@ -42,9 +42,9 @@ print "<script language=\"javascript\">
 
 <?php
 
-print "<table width='100%' border='0' cellpadding='3' cellspacing='2' bgcolor='silver'>
-<caption><b>DELETE ANNOUNCEMENT DETAILS</b></caption>
-<tr bgcolor='green'>
+print "<table width='100%' border='0' cellpadding='3' cellspacing='2' bgcolor='black'>
+<caption><b>DELETE ANNOUNCEMENT DETAILS</b></caption><br>
+<tr bgcolor='silver'>
 <th>To.</th>
 <th>Id.</th>
 <th>Subject</th>
@@ -75,16 +75,15 @@ print"</table>";
           </tr>
           <tr>
 		  <td align="center"><a href="adminpanel.php" target="_parent">Panel Admin <b>|</b></a>
-			<a href="viewannounce.php" target="_parent">View announce<b>|</b></a>
-			<a href="index.php" target="_parent">Log out</a></td>
+			<a href="viewannounce.php" target="_parent">View announce<b>|</b></a></td>
 		
           </tr>
           <tr>
-            <td colspan='3' align='center' bgcolor='silver' height='1'><?php
-           include("footer.php");
-                ?>
-            </td>
-          </tr>
+            <br>
+          <td>
+          <h5 style="color: white ;align:center">
+          &copy; Prison Mnanagement System</h4></t5>
+</tr>	
 	</table>
 </body>
 </head>

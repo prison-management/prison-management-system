@@ -4,7 +4,7 @@
    <link rel="stylesheet" media="screen" href="login.css" >
 </head>
 <body>
-	<table align='center' border='0' bgcolor='green' width='1300' cellpadding='8' cellspacing='0' height='200'>
+	<table align='center' border='0' bgcolor='black' width='1300' cellpadding='8' cellspacing='0' height='200'>
 
           <tr>
             <td bgcolor='#999999' valign='center'>
@@ -21,7 +21,7 @@ $conn = mysqli_connect("$host","$username","$password") or die("cannot connect")
 mysqli_select_db($conn, "$db_name")or die("cannot connect");
 
 $sel= mysqli_query($conn, "select * from $tbl_name ORDER BY id DESC LIMIT 0,7");
-echo"<table align='center' width='100%' bgcolor='GREEN' border='0' bgcolor='green' cellpadding='3' cellspacing='2' bgcolor='silver'>
+echo"<table align='center' width='100%' bgcolor='black' border='0' bgcolor='grey' cellpadding='3' cellspacing='2' bgcolor='silver'>
 <caption><h3>PRISONER INFORMATION</h3></caption>
 <tr bgcolor='#CCCCCC'>
 <th width='3%'>National id</th>
@@ -36,7 +36,6 @@ echo"<table align='center' width='100%' bgcolor='GREEN' border='0' bgcolor='gree
 <th width='10%'>Status</th>
 <th width='15%'>Offence</th>
 <th width='10%'>File Number</th>
-<th width='10%'>Prison</th>
 </tr>";
 
    while($row=mysqli_fetch_array ($sel))
@@ -55,7 +54,6 @@ echo  "<td width='10%'>".$row ['Education']."</td>";
 echo  "<td width='10%'>".$row ['Marital']."</td>";
 echo  "<td width='10%'>".$row ['Offence']. "</td>";
 echo  "<td width='10%'>".$row ['File_num']."</td>";
-echo  "<td width='10%'>".$row ['prison']."</td>";
 echo '<td width="3%"><b><a href="deleteprisoners1.php?id=' . $row['id'] . '">Delete</a></font></b></td>';
 
 
@@ -69,16 +67,15 @@ echo"</table>";
 			</td>
           </tr>
           <tr>
-			<td align="center" bgcolor='green'><a href="officerpanel.php" target="_parent">Officer Admin <b>|</b></a>
-      <a href="../admin/prisonerep.php" target="_parent">Print <b>|</b></a>
-			<a href="index.php" target="_parent">Log out</a></td>
+			<td align="center" bgcolor='black'><a href="officerpanel.php" target="_parent">Officer Admin <b>|</b></a>
+      <a href="../admin/prisonerep.php" target="_parent">Print <b>|</b></a></td>
 		
           </tr>
           <tr>
-            <td align='center' bgcolor='white' height='1'>
-					<?php
-           include("footer.php");
-                ?>
+            <td align='center' bgcolor='grey' height='1'>
+            <tr>
+            <td><h4 style="color: white">
+             &copy; Prison Mnanagement System</h4></td></tr>
             </td>
           </tr>
 	</table>

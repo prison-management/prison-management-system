@@ -1,102 +1,54 @@
 
-
 <head>
   <title>KERALA PRISON SERVICE</title>
    <link rel="stylesheet" media="screen" href="login.css" >
 </head>
 <body>
-	<table align='center' border='0' bgcolor='green' width='500' cellpadding='10' cellspacing='0' height='525'>
+	<table border='0' bgcolor="black" width="1200" cellpadding='10' cellspacing='0' height='525'>
           
-		  <tr>
-            <td colspan='3' height='2'><img src='banner.gif'></td>
-          </tr>
+	<h1 style="font-size: 60px;background: black;color: grey; padding: 90px;text-align: center">PRISON MANAGEMENT SYSTEM</h1>
 		  <tr>
             <td colspan="7" bgcolor="#yellow" height="1" align="center">
 		      <h1><font size="5">
-	           <a href="adminpanel.php">Home</a> | 
-              			   
-		        <a href="search-form.php">Search </a> 
-                <!-- <a href="location.php">Location</a>| -->
-				
-		        <a href="officertransfer.php">Officer</a>|
-		        <a href="registration.php">Register</a>
-				<a href="court.php">Court</a>
+	            <a href="adminpanel.php">Home |</a>
+			    <a href="search-form.php">Search |</a> 
+				<a href="../index.php">Log Out </a>
 		        </font></h1>
             </td>
 			 </td>
-		 
-            <td height='1' colspan='3' align='right' bgcolor="green">&nbsp;</td>
-			
+					
           </tr>
-		 
           <tr>
-		 
-            <td width='4%' bgcolor='#FFFFFF' valign='top'>
-<h3 align='center'  title='You should be online'>&nbsp;</h3></td>
 
             <td width='81%' valign='top' bgcolor="#FFFFFF">
 
-<p align='center'>
- 
-
-<h3 align='center'>&nbsp;</h3>
-<br/>
-<h3 align='center'>THIS FOR ADMINSITRATOR </h3>
-<P align='justify'><font face='Arial, Helvetica, sans-serif'>The system enable an Administrator 
-	to provide services to users nd here the administrator can add and upload information,
-	 update, delete, view the record added. The administrator
-	  can also change his account for more security.</font></p>
-
 		<br>
-			</td>
-            <td width='25%' bgcolor='green'  valign='top'>
-			
-	
-<table border='1' align='center'>
-<tr>
-<td width="252" bgcolor="green">
-<h4>  Admin Management : </h4>
-
-
+		<h3><b><u> Admin Management : </u></b></h3>
 <ul>
 	
-	<li><a href='viewofficer.php'><b><button>Prison Officer Transfer</button></b></a></li>
-		<br>
-
-	<li><a href='viewprisoners.php'><b><button>Prisoners Detais</button></b></a></li>
-		<br>
-	<li><a href='viewcase.php'><b><button>Case Details</button></b></a></li>
-		<br>
-	<li><a href='viewtransfer.php'><b><button>Transfer Information</button></b></a></li>
-		<br>
-	<li><a href='viewvis.php'><b><button>Visitors Information</button></b></a></li>
-		<br>
-	<li><a href='viewoff.php'><b><button>Officer details</button></b></a></li>
-		<br>
-	<li><a href='viewnewprison.php'><b><button>New Prison</button></b></a></li>
-		<br>
-	<li><a href='viewcourt.php'><b><button>Court Information</button></b></a></li>
-		<br>
-	<li><a href='viewAnnounce.php'><b><button>View Comment</button></b></a></li>
-		<br>
-	<li><a href='report.php'><b><button>Report</button></b></a></li>
-		<br>
-    <li><a href='../index.php''><b><button>LOG OUT</button></b></a></li>
+	<li><a href='viewofficer.php'><h5 style="color:black"><b>Officer Transfer Information</b></h5></a></li>
+	<li><a href='viewtransfer.php'><h5 style="color:black"><b>Prisoner Transfer Information</b></h5></a></li>
+	<li><a href='viewprisoners.php'><h5 style="color:black"><b>View Prisoners Detais</b></h5></a></li>
+	<li><a href='viewvis.php'><h5 style="color:black"><b>View Visitors Details</b></h5></a></li>
+	<li><a href='viewoff.php'><h5 style="color:black"><b>View Officer Details</b></h5></a></li>
+	<li><a href='viewcourt.php'><h5 style="color:black"><b>View Court Information</b></h5></a></li>
+	<li><a href='viewAnnounce.php'><h5 style="color:black"><b>View Comment</b></h5></a></li>
+	<li><a href='prisoner.php'><h5 style="color:black"><b>Add New Prisoner</b></h5></a></li>
+    <li><a href='newofficer.php'><h5 style="color:black"><b>Add New Officer</b></h5></a></li>
+	<li><a href='officertransfer.php'><h5 style="color:black"><b>Add Officer Transfer</b></h5></a></li>
+	<li><a href='transfer.php'><h5 style="color:black"><b>Add Prisoner Transfer</b></h5></a></li>
+	<li><a href='court.php'><h5 style="color:black"><b>Register Court</b></h5></a></li>
 </ul>
-</td>
-</tr>
-</table>
 
-
-			
 			</td>
-          </tr>
-          <tr>
-            <?php
-           include("Footer.php");
-                ?>
-          </tr>
+
+</tr>
+    <tr>
+          <td>
+          <h4 style="color: white">
+          &copy; Prison Mnanagement System</h4></td>
+</tr>		  
 	</table>
 </body>
 </head>
-</html>
+</html> 

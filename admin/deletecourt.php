@@ -4,7 +4,7 @@
   <link rel="stylesheet" media="screen" href="login.css" >
 </head>
 <body>
-	<table align='center' border='1' bgcolor='green' width='800' cellpadding='8' cellspacing='0' height='200'>
+	<table align='center' border='1' bgcolor='black' width='800' cellpadding='8' cellspacing='0' height='400'>
          
          
           <tr>
@@ -42,9 +42,9 @@ print "<script language=\"javascript\">
 
 <?php
 
-print "<table width='100%' border='0' cellpadding='3' cellspacing='2' bgcolor='green'>
+print "<table width='100%' border='0' cellpadding='3' cellspacing='2' bgcolor='black'>
 <caption><b>DELETE COURT DETAILS</b></caption>
-<tr bgcolor='green'>
+<tr bgcolor='silver'>
 
 <th width='3%'>National id</th>
 <th width='10%'>File Number</th>
@@ -75,16 +75,13 @@ print"</table>";
 			</td>
           </tr>
           <tr>
-		  <td align="center"><a href="adminpanel.php" target="_parent">Back to Admin <b>|</b></a>
-			<a href="viewcourt.php" target="_parent">View court<b>|</b></a>
-			<a href="index.php" target="_parent">Log out</a></td>
+		  <td align="center"><a href="adminpanel.php" target="_parent"> Admin Panel |</a>
+			<a href="viewcourt.php" target="_parent">View court</a></td>
 		
           </tr>
           <tr>
-            <td colspan='3' align='center' bgcolor='green' height='1'>
-					&copy; 2014 
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					KENYA PRISONS SERVICE
+            <td colspan='3' align='center' bgcolor='grey' height='1'>
+					&copy; 2014 KERALA PRISONS SERVICE
             </td>
           </tr>
 	</table>

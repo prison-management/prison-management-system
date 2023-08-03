@@ -8,10 +8,11 @@ if (mysqli_connect_errno()) {
 //escape variable for security here or problem
         $Nid =$_POST['Nid'];
         $Fname = $_POST['Fname'];
-        $month = $_POST['1Month'];
+        $month = $_POST['lMonth'];
         $dDay =  $_POST['txtDay'];
         $dYear = $_POST['txtYear'];
         $dateofbirth = $month . '/' .$dDay . '/' . $dYear;
+
         $month = $_POST['2Month'];
         $dDay =  $_POST['TxtDay'];
         $dYear = $_POST['TxtYear'];
@@ -22,14 +23,15 @@ if (mysqli_connect_errno()) {
         $dYear = $_POST['TXtYear'];
         $dateout = $month . '/' .$dDay . '/' . $dYear;
         
-        $address=$_POST['address1'];
-        $county =$_POST['country'];
+        $address=$_POST['address'];
+        $county =$_POST['county'];
         $Gender =$_POST['Gender'];
         $education=$_POST['education'];
         $status =$_POST['status'];
         $offence =$_POST['offence'];
         $sentence =$_POST['sentence'];
         $Filenum =$_POST['Filenum'];
+        $prison =$_POST['prison'];
         
 
 //we are using mysql_query function. it returns a resource on true else False on error
@@ -46,16 +48,15 @@ if (mysqli_connect_errno()) {
                     Marital = '$status',
                     Offence = '$offence',
                     Sentence = '$sentence',
-                    File_num = '$Filenum'
-           
-                    ";
-                    
-        $result = mysqli_query($con, $sql);
+                    File_num = '$Filenum',
+                    prison = '$prison'";  
 
 
-
+if (!mysqli_query($con,$sql)) {
+  die('Error: ' . mysqli_error($con));
+}
 ?>
 	<script type="text/javascript">
 						alert("you have succefully add the record !thank you");
-						window.location = "userpanel.php";
+						window.location = "adminpanel.php";
 					</script>
